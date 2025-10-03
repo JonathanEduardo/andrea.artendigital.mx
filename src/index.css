@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme  {
+    --arten-primary: #f4436d;
+    --arten-secondary: #f2f2f2;
+}
+
+.card {
+    @apply w-full h-full  bg-neutral-100 flex flex-col gap-4 items-center px-6 py-8 rounded-l-2xl shadow-lg ;
+}
+
+.card > .title {
+    @apply text-3xl font-bold text-[var(--arten-primary)] ;
+}

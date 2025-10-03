@@ -1,0 +1,19 @@
+{
+    "stack": [
+      {
+        "title": "ERP´s a medida",
+        "body": "Obra digital en técnica mixta.",
+        "path": "/assets/img/carusel/erps.png"
+      },
+      {
+        "title": "Webs a medida",
+        "body": "Serie: Sueños y colores.",
+        "path": "/assets/img/carusel/landingpages.png"
+      },
+      {
+        "title": "Landing pages",
+        "body": "Exploración de luz y textura.",
+        "path": "/assets/img/carusel/webapp.png"
+      }
+    ]
+  }
