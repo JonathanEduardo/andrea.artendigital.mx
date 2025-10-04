@@ -1,14 +1,34 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
 
 @theme  {
-    --arten-primary: #f4436d;
-    --arten-secondary: #f2f2f2;
+    --arten-primary: #324e57;
+    --arten-secondary: #4da6a6;
+}
+
+
+body{
+    @apply bg-neutral-500;
 }
 
 .card {
-    @apply w-full h-full  bg-neutral-100 flex flex-col gap-4 items-center px-6 py-8 rounded-l-2xl shadow-lg ;
+    @apply w-full h-full  bg-white flex flex-col gap-4 items-center px-6 py-8 rounded-l-2xl shadow-lg ;
 }
 
-.card > .title {
-    @apply text-3xl font-bold text-[var(--arten-primary)] ;
+.card  .title {
+    @apply text-3xl font-bold text-[var(--arten-primary)] animate-fade-left animate-once animate-duration-2000 animate-delay-1500;
+}
+.card  .body{
+    @apply text-gray-700 mt-2 font-bold animate-fade-right animate-once animate-duration-1000 animate-delay-1500;
+}
+
+.card .photo {
+    @apply w-1/2 rounded-full mt-1.5  animate-fade-up animate-once animate-duration-2000 animate-delay-1500;
+}
+.card .showMore {
+    @apply mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 animate-fade-down animate-once animate-duration-1000 animate-delay-1500;
+}
+
+.card .icon {
+    @apply w-6 h-6 animate-flip-up animate-once animate-duration-1000 animate-delay-2500;
 }
