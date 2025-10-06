@@ -1,0 +1,1 @@
+{/* Demo alzanzar una estrella ;) */}

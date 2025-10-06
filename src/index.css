@@ -6,13 +6,16 @@
     --arten-secondary: #4da6a6;
 }
 
+#root{
+    @apply p-4;
+}
 
 body{
     @apply bg-neutral-500;
 }
 
 .card {
-    @apply w-full h-full  bg-white flex flex-col gap-4 items-center px-6 py-8 rounded-l-2xl shadow-lg ;
+    @apply w-full h-full  bg-white flex flex-col gap-4 items-center justify-between px-6 py-8 rounded-t-2xl md:rounded-l-2xl md:rounded-t-none shadow-lg ;
 }
 
 .card  .title {
@@ -26,9 +29,13 @@ body{
     @apply w-1/2 rounded-full mt-1.5  animate-fade-up animate-once animate-duration-2000 animate-delay-1500;
 }
 .card .showMore {
-    @apply mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 animate-fade-down animate-once animate-duration-1000 animate-delay-1500;
+    @apply mt-4 inline-block px-6 py-2 bg-[var(--arten-primary)] text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 animate-fade-down animate-once animate-duration-1000 animate-delay-1500;
 }
 
 .card .icon {
     @apply w-6 h-6 animate-flip-up animate-once animate-duration-1000 animate-delay-2500;
+}
+
+.card .text-about {
+    @apply text-center  text-gray-700 animate-fade animate-once animate-duration-1000 animate-delay-[2500ms];
 }

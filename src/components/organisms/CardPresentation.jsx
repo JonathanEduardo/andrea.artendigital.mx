@@ -11,22 +11,27 @@ const CardPresentation = ({ title="Andrea", body="Artista digital", image="/asse
                 <p className="body">{body}</p>
                 <img src={image} alt={title} className='photo' />
             </div>
-            <div>
-                <a href={path} className="showMore">Ver más</a>
-            </div>
-            {/* <div className="mt-4">
-                <p className="text-neutral-700 font-bold">Contacto</p>
-                <div className="qr">
-                    <img src={qr} alt="" />
-                </div>
-            </div> */}
-     
-        <hr />  
+        
+
            <div className='flex flex-row justify-center gap-10 w-full '>
-                <a href="https://wa.me/5219991234567" target="_blank" rel="noopener noreferrer"><img src={whatsAppIcon} alt="WhatsApp" className="icon" /></a>
-                <a href="https://www.linkedin.com/in/andrea-leticia-venegas-cepeda/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="LinkedIn" className="icon" /></a>
-                <a href="https://www.instagram.com/andrea_leticia_venegas_cepeda/" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" className="icon" /></a>
+                <a href="https://wa.me/524441424697" target="_blank" rel="noopener noreferrer"><img src={whatsAppIcon} alt="WhatsApp" className="icon" /></a>
+                <a href="https://www.linkedin.com/in/andreakircof" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="LinkedIn" className="icon" /></a>
+                <a href="https://www.instagram.com/andrea_alv04" target="_blank" rel="noopener noreferrer"><img src={instagramIcon} alt="Instagram" className="icon" /></a>
            </div>
+
+
+           <div className='flex flex-col items-center mt-5'>
+            <div>
+                <p className="text-about"> "Cuéntanos tu mayor problema que se enfrenta tu negocio… <br/> <span className='font-medium'> nosotros lo resolvemos con tecnología.</span>"</p>
+            </div>
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScFJSkvtE3G-mC2Y8QqQBI7-W4rJO40mmyW1K9Gh_MxN3VPHg/viewform?usp=send_form"
+                className="showMore"
+                target="_blank"
+                rel="noopener noreferrer"
+                > Formulario.</a>
+            
+            </div>
         </div>
     );
 };

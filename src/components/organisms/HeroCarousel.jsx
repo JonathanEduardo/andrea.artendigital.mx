@@ -24,8 +24,7 @@ const HeroCarousel = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3500, disableOnInteraction: false }}
         effect="fade"
-        className="rounded-r-2xl shadow-2xl overflow-hidden"
-      >
+        className="rounded-b-2xl md:rounded-r-2xl md:rounded-b-none shadow-2xl overflow-hidden">
         {slides.map((item, idx) => (
           <SwiperSlide key={`${item.title}-${idx}`}>
             <div className="relative w-full h-[420px] md:h-[520px] lg:h-[600px] bg-neutral-900">
