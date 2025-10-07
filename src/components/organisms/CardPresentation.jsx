@@ -43,12 +43,21 @@ const CardPresentation = ({
         <p className="body text-gray-600 text-center ">{body}</p>
         <img src={image} alt={title} className='photo w-40 h-40 object-cover rounded-full my-4' />
 
-        <button
+        {/* <button
         onClick={handleDownload}
         className="buttonDownload "
       >
         Descargar tarjeta
-      </button>
+      </button> */}
+
+      <a
+        href="/assets/img/download.png"
+        download="andrea_venegas.png"
+        className="buttonDownload"
+        >
+        Descargar tarjeta
+
+        </a>
       </div>
 
       {/* 🔽 Botón para descargar */}
