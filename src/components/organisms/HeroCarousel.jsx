@@ -24,10 +24,10 @@ const HeroCarousel = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3500, disableOnInteraction: false }}
         effect="fade"
-        className="rounded-b-2xl md:rounded-r-2xl md:rounded-b-none shadow-2xl overflow-hidden">
+        className="rounded-b-2xl rounded-t-none md:rounded-r-2xl md:rounded-l-none shadow-2xl overflow-hidden">
         {slides.map((item, idx) => (
           <SwiperSlide key={`${item.title}-${idx}`}>
-            <div className="relative w-full h-[420px] md:h-[520px] lg:h-[600px] bg-neutral-900">
+            <div className="relative w-full h-[38rem] sm:h-[45rem]  md:h-[45rem] bg-neutral-900" >
               {/* Image */}
               <img
                 src={item.path}

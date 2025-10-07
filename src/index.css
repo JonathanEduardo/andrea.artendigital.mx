@@ -3,7 +3,8 @@
 
 @theme  {
     --arten-primary: #324e57;
-    --arten-secondary: #4da6a6;
+    --arten-secondary: #245E6E;
+    --arten-light: #22677E;
 }
 
 #root{
@@ -15,7 +16,7 @@ body{
 }
 
 .card {
-    @apply w-full h-full  bg-white flex flex-col gap-4 items-center justify-between px-6 py-8 rounded-t-2xl md:rounded-l-2xl md:rounded-t-none shadow-lg ;
+    @apply w-full h-full  bg-white flex flex-col gap-4 items-center justify-between px-6 py-8 rounded-t-2xl rounded-b-none md:rounded-l-2xl md:rounded-t-none shadow-lg ;
 }
 
 .card  .title {
@@ -28,9 +29,7 @@ body{
 .card .photo {
     @apply w-1/2 rounded-full mt-1.5  animate-fade-up animate-once animate-duration-2000 animate-delay-1500;
 }
-.card .showMore {
-    @apply mt-4 inline-block px-6 py-2 bg-[var(--arten-primary)] text-white rounded-lg hover:bg-blue-600 transition-colors duration-300 animate-fade-down animate-once animate-duration-1000 animate-delay-1500;
-}
+
 
 .card .icon {
     @apply w-6 h-6 animate-flip-up animate-once animate-duration-1000 animate-delay-2500;
@@ -38,4 +37,12 @@ body{
 
 .card .text-about {
     @apply text-center  text-gray-700 animate-fade animate-once animate-duration-1000 animate-delay-[2500ms];
+}
+
+.card .showMore {
+    @apply mt-4 inline-block px-6 py-2 text-[var(--arten-primary)] rounded-lg border-[var(--arten-primary)] border-2 font-semibold hover:bg-[var(--arten-primary)] hover:text-white transition-colors duration-300 animate-fade-down animate-once animate-duration-1000 animate-delay-1500;
+}
+
+.card .buttonDownload {
+    @apply md:mt-2 mt-4 inline-block px-6 py-2 bg-[var(--arten-primary)] text-white rounded-lg hover:bg-[var(--arten-secondary)] transition-colors duration-300 animate-fade-down animate-once animate-duration-1000 animate-delay-1500;
 }
